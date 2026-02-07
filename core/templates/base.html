@@ -1,0 +1,11 @@
+{% load static %}
+{% include 'header.html' %}
+<body class="d-flex flex-column min-vh-100">
+    {% include 'navbar.html' %}
+    <main class="flex-shrink-0">
+        {% block content %}
+        {% endblock %}
+    </main>
+    {% include 'footer.html' %}
+</body>
+</html>

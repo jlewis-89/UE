@@ -1,10 +1,13 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
 <div class="homepage">
     <section class="hero">
-        <h1>Welcome to Urban Energy</h1>
+        <h1>Urban Energy</h1>
         <p>Sustainable energy solutions for modern cities</p>
+    </section>
+    <section>
+        <img src="{% static 'assets/PVimage1.jpg' %}" alt="Solar Panel Installation">
     </section>
 
     <section class="features">

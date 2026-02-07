@@ -15,14 +15,13 @@
 
 body {
     font-family: var(--font-primary);
-    background-color: var(--color-white);
-    color: var(--color-blue);
+    background-color: var(--color-blue);
+    color: var(--color-white);
     line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--color-blue);
-    font-family: var(--font-primary);
+    color: var(--color-white);
     margin-bottom: 1rem;
 }
 
@@ -34,6 +33,7 @@ a {
 
 a:hover {
     color: var(--color-blue);
+    animation: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 button {
@@ -55,4 +55,13 @@ button:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+}
+
+.logo {
+    max-width: 160px;
+    /* adjust to your preferred size */
+    height: auto;
+    /* keeps aspect ratio */
+    width: 100%;
+    /* allows scaling down on small screens */
 }
