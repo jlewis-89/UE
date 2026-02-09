@@ -1,19 +1,23 @@
 {% load static %}
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/core/templates/home.html"><img src="{% static 'assets/UE-Full-Blue.svg' %}"
-                alt="Urban Energy Logo"> Your Partner in Energy </a>
+    <div class="container">
+        <div class="d-flex">
+            <picture>
+        <a href="/core/templates/home.html"><img src="{% static 'assets/UE-Full-Blue.svg' %}" media-max-width="600px"
+                alt="Urban Energy Logo" class="text-hidden">why does the image only show when text is here?</a>
+            </picture>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+            aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/core/templates/home.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="/about">About Us</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -30,10 +34,10 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="blog">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="contact">Contact Us</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">
