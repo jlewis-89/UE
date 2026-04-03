@@ -1,49 +1,29 @@
 {% load static %}
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
-        <div class="d-flex">
-            <picture>
-        <a href="/core/templates/home.html"><img src="{% static 'assets/UE-Full-Blue.svg' %}" media-max-width="600px"
-                alt="Urban Energy Logo" class="text-hidden">why does the image only show when text is here?</a>
-            </picture>
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+        <a class="navbar-brand fw-bold" href="index.html">
+            <i class="fas fa-bolt text-primary me-2"></i>Urban Energy
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/core/templates/home.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about">About Us</a>
-                </li>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Services
-                    </a>
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                        data-bs-toggle="dropdown">Services</a>
                     <ul class="dropdown-menu">
-                        <ul class="nav-menu">
-                            <li><a class="dropdown-item" href="/surveys">Electrical Surveys</a></li>
-                            <li><a class="dropdown-item" href="/services">Renewable Energy Integration</a></li>
-                            <li><a class="dropdown-item" href="/about">M&E Services</a></li>
-                            <li><a class="dropdown-item" href="/contact">Feasibility Studies</a></li>
-                        </ul>
+                        <li><a class="dropdown-item" href="services.html">Energy Audits</a></li>
+                        <li><a class="dropdown-item" href="services.html">Renewable Integration</a></li>
+                        <li><a class="dropdown-item" href="services.html">Sustainability Strategy</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="blog">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact">Contact Us</a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="tools.html">Tools</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
         </div>
     </div>
 </nav>
